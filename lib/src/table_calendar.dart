@@ -533,9 +533,8 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
             },
             dayBuilder: (context, day, focusedMonth) {
               return InkWell(
-                //behavior: widget.dayHitTestBehavior,
                 customBorder: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(64),
+                  borderRadius: BorderRadius.circular(8),
                 ),
                 onTap: () => _onDayTapped(day),
                 onLongPress: () => _onDayLongPressed(day),
